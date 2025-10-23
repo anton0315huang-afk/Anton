@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的網站</title>
-    <!-- 確保路徑正確 -->
-    <link rel="stylesheet" href="styles.css">
+    <title>我的 GitHub 網站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="Iam">
+    <header>
         <h1>歡迎來到我的網站</h1>
+        <nav>
+            <a href="#about">關於我</a>
+            <a href="#gallery">作品集</a>
+            <a href="#contact">聯絡我</a>
+        </nav>
     </header>
-    <section>
+
+    <section id="about">
         <h2>關於我</h2>
-        <p>這是一個示例網站。</p>
+        <p>這是一個放在 GitHub Pages 的靜態網站範例。我喜歡程式設計和設計漂亮的網頁！</p>
     </section>
+
+    <section id="gallery">
+        <h2>作品集</h2>
+        <div class="images">
+            <img src="https://via.placeholder.com/200" alt="範例圖片1">
+            <img src="https://via.placeholder.com/200" alt="範例圖片2">
+            <img src="https://via.placeholder.com/200" alt="範例圖片3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我</h2>
+        <form id="contactForm">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">訊息:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">送出</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 我的網站</p>
+        <p>&copy; 2025 我的 GitHub 網站</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
