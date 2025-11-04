@@ -1,39 +1,129 @@
+/* 基本樣式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #ffbb00;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #ffbb00;
     color: white;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #ffbb00;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffbb00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffbb00;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#formMessage {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* 作品集頁面圖片 */
 .images {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .images img {
@@ -41,38 +131,4 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-}
-
-form label {
-    display: block;
-    margin-top: 1rem;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
 }
